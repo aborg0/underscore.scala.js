@@ -6,7 +6,7 @@ underscore.scala.js
 Documentation
 -------------
 
-The usage of underscore.scala.js is mostly similar to its parent library. The main difference is the usage of the `_`. In this library, it is replaced with the \u0952 (?) [DEVANAGARI STRESS SIGN ANUDATTA] (http://www.utf8-chartable.de/unicode-utf8-table.pl?start=2304)
+The usage of underscore.scala.js is mostly similar to its parent library. The main difference is the usage of the `_`. In this library, it is replaced with the two underscores, `__`.
 
 TODO
 

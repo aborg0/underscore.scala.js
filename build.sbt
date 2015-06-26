@@ -21,6 +21,10 @@ testFrameworks += new TestFramework("utest.runner.Framework")
 
 jsDependencies += "org.webjars" % "underscorejs" % "1.7.0-1" / "underscore.js"
 
+libraryDependencies += "com.lihaoyi" %%% "utest" % "0.3.1"
+
+testFrameworks += new TestFramework("utest.runner.Framework")
+
 skip in packageJSDependencies := false
 
 scalacOptions ++= Seq(

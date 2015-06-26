@@ -1,8 +1,9 @@
 
 import scala.scalajs.js
 import js.annotation._
+import scala.scalajs.js.Dictionary
 
-package importedjs {
+package com.mind_era.underscore {
 
 package __ {
 
@@ -19,23 +20,27 @@ trait TemplateSettings extends js.Object {
   var escape: RegExp = js.native
 }
 
-trait Collection[T] extends js.Object {
-}
+//trait Collection[T] extends js.Object {
+//}
+//
+//trait List[T] extends Collection[T] {
+//  @JSBracketAccess
+//  def apply(index: Double): T = js.native
+//  @JSBracketAccess
+//  def update(index: Double, v: T): Unit = js.native
+//  var length: Double = js.native
+//}
+//
+//trait Dictionary[T] extends Collection[T] {
+//  @JSBracketAccess
+//  def apply(index: String): T = js.native
+//  @JSBracketAccess
+//  def update(index: String, v: T): Unit = js.native
+//}
 
-trait List[T] extends Collection[T] {
-  @JSBracketAccess
-  def apply(index: Double): T = js.native
-  @JSBracketAccess
-  def update(index: Double, v: T): Unit = js.native
-  var length: Double = js.native
-}
-
-trait Dictionary[T] extends Collection[T] {
-  @JSBracketAccess
-  def apply(index: String): T = js.native
-  @JSBracketAccess
-  def update(index: String, v: T): Unit = js.native
-}
+import scalajs.js.Dictionary
+import collection.mutable.{IndexedSeq => List}
+import collection.{Iterable => Collection}
 
 trait ListIterator[T, TResult] extends js.Object {
   def apply(value: T, index: Double, list: List[T]): TResult = js.native
@@ -55,107 +60,110 @@ trait MemoObjectIterator[T, TResult] extends js.Object {
 
 }
 
+import collection.mutable.{IndexedSeq => List}
+import collection.{Iterable => Collection}
+
 trait UnderscoreStatic extends js.Object {
   def apply[T](value: js.Array[T]): Underscore[T] = js.native
-  def each[T](list: __.List[T], iterator: __.ListIterator[T, Unit], context: js.Any = ???): __.List[T] = js.native
+  def each[T](list: /*__.*/List[T], iterator: __.ListIterator[T, Unit], context: js.Any = ???): /*__.*/List[T] = js.native
   @JSName("each")
-  def eachDictionary[T](`object`: __.Dictionary[T], iterator: __.ObjectIterator[T, Unit], context: js.Any = ???): __.Dictionary[T] = js.native
-  def forEach[T](list: __.List[T], iterator: __.ListIterator[T, Unit], context: js.Any = ???): __.List[T] = js.native
+  def eachDictionary[T](`object`: /*__.*/Dictionary[T], iterator: __.ObjectIterator[T, Unit], context: js.Any = ???): /*__.*/Dictionary[T] = js.native
+  def forEach[T](list: /*__.*/List[T], iterator: __.ListIterator[T, Unit], context: js.Any = ???): /*__.*/List[T] = js.native
   @JSName("forEach")
-  def forEachDictionary[T](`object`: __.Dictionary[T], iterator: __.ObjectIterator[T, Unit], context: js.Any = ???): __.Dictionary[T] = js.native
-  def map[T, TResult](list: __.List[T], iterator: __.ListIterator[T, TResult], context: js.Any = ???): js.Array[TResult] = js.native
+  def forEachDictionary[T](`object`: /*__.*/Dictionary[T], iterator: __.ObjectIterator[T, Unit], context: js.Any = ???): /*__.*/Dictionary[T] = js.native
+  def map[T, TResult](list: /*__.*/List[T], iterator: __.ListIterator[T, TResult], context: js.Any = ???): js.Array[TResult] = js.native
   @JSName("map")
-  def mapDictionary[T, TResult](`object`: __.Dictionary[T], iterator: __.ObjectIterator[T, TResult], context: js.Any = ???): js.Array[TResult] = js.native
-  def collect[T, TResult](list: __.List[T], iterator: __.ListIterator[T, TResult], context: js.Any = ???): js.Array[TResult] = js.native
+  def mapDictionary[T, TResult](`object`: /*__.*/Dictionary[T], iterator: __.ObjectIterator[T, TResult], context: js.Any = ???): js.Array[TResult] = js.native
+  def collect[T, TResult](list: /*__.*/List[T], iterator: __.ListIterator[T, TResult], context: js.Any = ???): js.Array[TResult] = js.native
   @JSName("collect")
-  def collectDictionary[T, TResult](`object`: __.Dictionary[T], iterator: __.ObjectIterator[T, TResult], context: js.Any = ???): js.Array[TResult] = js.native
-  def reduce[T, TResult](list: __.Collection[T], iterator: __.MemoIterator[T, TResult], memo: TResult = ???, context: js.Any = ???): TResult = js.native
-  def inject[T, TResult](list: __.Collection[T], iterator: __.MemoIterator[T, TResult], memo: TResult = ???, context: js.Any = ???): TResult = js.native
-  def foldl[T, TResult](list: __.Collection[T], iterator: __.MemoIterator[T, TResult], memo: TResult = ???, context: js.Any = ???): TResult = js.native
-  def reduceRight[T, TResult](list: __.Collection[T], iterator: __.MemoIterator[T, TResult], memo: TResult = ???, context: js.Any = ???): TResult = js.native
-  def foldr[T, TResult](list: __.Collection[T], iterator: __.MemoIterator[T, TResult], memo: TResult = ???, context: js.Any = ???): TResult = js.native
-  def find[T](list: __.List[T], iterator: __.ListIterator[T, Boolean], context: js.Any = ???): T = js.native
+  def collectDictionary[T, TResult](`object`: /*__.*/Dictionary[T], iterator: __.ObjectIterator[T, TResult], context: js.Any = ???): js.Array[TResult] = js.native
+  def reduce[T, TResult](list: /*__.*/Collection[T], iterator: __.MemoIterator[T, TResult], memo: TResult = ???, context: js.Any = ???): TResult = js.native
+  def inject[T, TResult](list: /*__.*/Collection[T], iterator: __.MemoIterator[T, TResult], memo: TResult = ???, context: js.Any = ???): TResult = js.native
+  def foldl[T, TResult](list: /*__.*/Collection[T], iterator: __.MemoIterator[T, TResult], memo: TResult = ???, context: js.Any = ???): TResult = js.native
+  def reduceRight[T, TResult](list: /*__.*/Collection[T], iterator: __.MemoIterator[T, TResult], memo: TResult = ???, context: js.Any = ???): TResult = js.native
+  def foldr[T, TResult](list: /*__.*/Collection[T], iterator: __.MemoIterator[T, TResult], memo: TResult = ???, context: js.Any = ???): TResult = js.native
+  def find[T](list: /*__.*/List[T], iterator: __.ListIterator[T, Boolean], context: js.Any = ???): T = js.native
   @JSName("find")
-  def findDictionary[T](`object`: __.Dictionary[T], iterator: __.ObjectIterator[T, Boolean], context: js.Any = ???): T = js.native
-  def detect[T](list: __.List[T], iterator: __.ListIterator[T, Boolean], context: js.Any = ???): T = js.native
+  def findDictionary[T](`object`: /*__.*/Dictionary[T], iterator: __.ObjectIterator[T, Boolean], context: js.Any = ???): T = js.native
+  def detect[T](list: /*__.*/List[T], iterator: __.ListIterator[T, Boolean], context: js.Any = ???): T = js.native
   @JSName("detect")
-  def detectDictionary[T](`object`: __.Dictionary[T], iterator: __.ObjectIterator[T, Boolean], context: js.Any = ???): T = js.native
-  def findIndex[T](list: __.List[T], iterator: __.ListIterator[T, Boolean], context: js.Any = ???): Double = js.native
-  def filter[T](list: __.List[T], iterator: __.ListIterator[T, Boolean], context: js.Any = ???): js.Array[T] = js.native
+  def detectDictionary[T](`object`: /*__.*/Dictionary[T], iterator: __.ObjectIterator[T, Boolean], context: js.Any = ???): T = js.native
+  def findIndex[T](list: /*__.*/List[T], iterator: __.ListIterator[T, Boolean], context: js.Any = ???): Double = js.native
+  def filter[T](list: /*__.*/List[T], iterator: __.ListIterator[T, Boolean], context: js.Any = ???): js.Array[T] = js.native
   @JSName("filter")
-  def filterDictionary[T](`object`: __.Dictionary[T], iterator: __.ObjectIterator[T, Boolean], context: js.Any = ???): js.Array[T] = js.native
-  def select[T](list: __.List[T], iterator: __.ListIterator[T, Boolean], context: js.Any = ???): js.Array[T] = js.native
+  def filterDictionary[T](`object`: /*__.*/Dictionary[T], iterator: __.ObjectIterator[T, Boolean], context: js.Any = ???): js.Array[T] = js.native
+  def select[T](list: /*__.*/List[T], iterator: __.ListIterator[T, Boolean], context: js.Any = ???): js.Array[T] = js.native
   @JSName("select")
-  def selectDictionary[T](`object`: __.Dictionary[T], iterator: __.ObjectIterator[T, Boolean], context: js.Any = ???): js.Array[T] = js.native
-  def where[T, U <: AnyRef](list: __.List[T], properties: U): js.Array[T] = js.native
-  def findWhere[T, U <: AnyRef](list: __.List[T], properties: U): T = js.native
-  def reject[T](list: __.List[T], iterator: __.ListIterator[T, Boolean], context: js.Any = ???): js.Array[T] = js.native
+  def selectDictionary[T](`object`: /*__.*/Dictionary[T], iterator: __.ObjectIterator[T, Boolean], context: js.Any = ???): js.Array[T] = js.native
+  def where[T, U <: AnyRef](list: /*__.*/List[T], properties: U): js.Array[T] = js.native
+  def findWhere[T, U <: AnyRef](list: /*__.*/List[T], properties: U): T = js.native
+  def reject[T](list: /*__.*/List[T], iterator: __.ListIterator[T, Boolean], context: js.Any = ???): js.Array[T] = js.native
   @JSName("reject")
-  def rejectDictionary[T](`object`: __.Dictionary[T], iterator: __.ObjectIterator[T, Boolean], context: js.Any = ???): js.Array[T] = js.native
-  def every[T](list: __.List[T], iterator: __.ListIterator[T, Boolean] = ???, context: js.Any = ???): Boolean = js.native
-  def all[T](list: __.List[T], iterator: __.ListIterator[T, Boolean] = ???, context: js.Any = ???): Boolean = js.native
-  def some[T](list: __.List[T], iterator: __.ListIterator[T, Boolean] = ???, context: js.Any = ???): Boolean = js.native
+  def rejectDictionary[T](`object`: /*__.*/Dictionary[T], iterator: __.ObjectIterator[T, Boolean], context: js.Any = ???): js.Array[T] = js.native
+  def every[T](list: /*__.*/List[T], iterator: __.ListIterator[T, Boolean] = ???, context: js.Any = ???): Boolean = js.native
+  def all[T](list: /*__.*/List[T], iterator: __.ListIterator[T, Boolean] = ???, context: js.Any = ???): Boolean = js.native
+  def some[T](list: /*__.*/List[T], iterator: __.ListIterator[T, Boolean] = ???, context: js.Any = ???): Boolean = js.native
   @JSName("some")
-  def someDictionary[T](`object`: __.Dictionary[T], iterator: __.ObjectIterator[T, Boolean] = ???, context: js.Any = ???): Boolean = js.native
-  def any[T](list: __.List[T], iterator: __.ListIterator[T, Boolean] = ???, context: js.Any = ???): Boolean = js.native
+  def someDictionary[T](`object`: /*__.*/Dictionary[T], iterator: __.ObjectIterator[T, Boolean] = ???, context: js.Any = ???): Boolean = js.native
+  def any[T](list: /*__.*/List[T], iterator: __.ListIterator[T, Boolean] = ???, context: js.Any = ???): Boolean = js.native
   @JSName("any")
-  def anyDictionary[T](`object`: __.Dictionary[T], iterator: __.ObjectIterator[T, Boolean] = ???, context: js.Any = ???): Boolean = js.native
-  def contains[T](list: __.List[T], value: T): Boolean = js.native
-  def contains[T](`object`: __.Dictionary[T], value: T): Boolean = js.native
-  def include[T](list: __.Collection[T], value: T): Boolean = js.native
-  def include[T](`object`: __.Dictionary[T], value: T): Boolean = js.native
-  def invoke[T <: AnyRef](list: __.List[T], methodName: String, arguments: js.Any*): js.Dynamic = js.native
-  def pluck[T <: AnyRef](list: __.List[T], propertyName: String): js.Array[js.Any] = js.native
-  def max(list: __.List[Double]): Double = js.native
-  def max[T](list: __.List[T], iterator: __.ListIterator[T, js.Any] = ???, context: js.Any = ???): T = js.native
-  def min(list: __.List[Double]): Double = js.native
-  def min[T](list: __.List[T], iterator: __.ListIterator[T, js.Any] = ???, context: js.Any = ???): T = js.native
-  def sortBy[T, TSort](list: __.List[T], iterator: __.ListIterator[T, TSort] = ???, context: js.Any = ???): js.Array[T] = js.native
+  def anyDictionary[T](`object`: /*__.*/Dictionary[T], iterator: __.ObjectIterator[T, Boolean] = ???, context: js.Any = ???): Boolean = js.native
+  def contains[T](list: /*__.*/List[T], value: T): Boolean = js.native
+  def contains[T](`object`: /*__.*/Dictionary[T], value: T): Boolean = js.native
+  def include[T](list: /*__.*/Collection[T], value: T): Boolean = js.native
+  def include[T](`object`: /*__.*/Dictionary[T], value: T): Boolean = js.native
+  def invoke[T <: AnyRef](list: /*__.*/List[T], methodName: String, arguments: js.Any*): js.Dynamic = js.native
+  def pluck[T <: AnyRef](list: /*__.*/List[T], propertyName: String): js.Array[js.Any] = js.native
+  def max(list: /*__.*/List[Double]): Double = js.native
+  def max[T](list: /*__.*/List[T], iterator: __.ListIterator[T, js.Any] = ???, context: js.Any = ???): T = js.native
+  def min(list: /*__.*/List[Double]): Double = js.native
+  def min[T](list: /*__.*/List[T], iterator: __.ListIterator[T, js.Any] = ???, context: js.Any = ???): T = js.native
+  def sortBy[T, TSort](list: /*__.*/List[T], iterator: __.ListIterator[T, TSort] = ???, context: js.Any = ???): js.Array[T] = js.native
   @JSName("sortBy")
-  def sortByString[T](list: __.List[T], iterator: String, context: js.Any = ???): js.Array[T] = js.native
-  def groupBy[T](list: __.List[T], iterator: __.ListIterator[T, js.Any] = ???, context: js.Any = ???): __.Dictionary[js.Array[T]] = js.native
-  def indexBy[T](list: __.List[T], iterator: __.ListIterator[T, js.Any], context: js.Any = ???): __.Dictionary[T] = js.native
-  def countBy[T](list: __.List[T], iterator: __.ListIterator[T, js.Any] = ???, context: js.Any = ???): __.Dictionary[Double] = js.native
-  def shuffle[T](list: __.Collection[T]): js.Array[T] = js.native
-  def sample[T](list: __.Collection[T], n: Double): js.Array[T] = js.native
-  def sample[T](list: __.Collection[T]): T = js.native
-  def toArray[T](list: __.Collection[T]): js.Array[T] = js.native
-  def size[T](list: __.Collection[T]): Double = js.native
+  def sortByString[T](list: /*__.*/List[T], iterator: String, context: js.Any = ???): js.Array[T] = js.native
+  def groupBy[T](list: /*__.*/List[T], iterator: __.ListIterator[T, js.Any] = ???, context: js.Any = ???): /*__.*/Dictionary[js.Array[T]] = js.native
+  def indexBy[T](list: /*__.*/List[T], iterator: __.ListIterator[T, js.Any], context: js.Any = ???): /*__.*/Dictionary[T] = js.native
+  def countBy[T](list: /*__.*/List[T], iterator: __.ListIterator[T, js.Any] = ???, context: js.Any = ???): /*__.*/Dictionary[Double] = js.native
+  def shuffle[T](list: /*__.*/Collection[T]): js.Array[T] = js.native
+  def sample[T](list: /*__.*/Collection[T], n: Double): js.Array[T] = js.native
+  def sample[T](list: /*__.*/Collection[T]): T = js.native
+  def toArray[T](list: /*__.*/Collection[T]): js.Array[T] = js.native
+  def size[T](list: /*__.*/Collection[T]): Double = js.native
   def partition[T](array: js.Array[T], iterator: __.ListIterator[T, Boolean], context: js.Any = ???): js.Array[js.Array[T]] = js.native
-  def first[T](array: __.List[T]): T = js.native
-  def first[T](array: __.List[T], n: Double): js.Array[T] = js.native
-  def head[T](array: __.List[T]): T = js.native
-  def head[T](array: __.List[T], n: Double): js.Array[T] = js.native
-  def take[T](array: __.List[T]): T = js.native
-  def take[T](array: __.List[T], n: Double): js.Array[T] = js.native
-  def initial[T](array: __.List[T], n: Double = ???): js.Array[T] = js.native
-  def last[T](array: __.List[T]): T = js.native
-  def last[T](array: __.List[T], n: Double): js.Array[T] = js.native
-  def rest[T](array: __.List[T], n: Double = ???): js.Array[T] = js.native
-  def tail[T](array: __.List[T], n: Double = ???): js.Array[T] = js.native
-  def drop[T](array: __.List[T], n: Double = ???): js.Array[T] = js.native
-  def compact[T](array: __.List[T]): js.Array[T] = js.native
-  def flatten(array: __.List[js.Any], shallow: Boolean = ???): js.Array[js.Any] = js.native
-  def without[T](array: __.List[T], values: T*): js.Array[T] = js.native
-  def union[T](arrays: __.List[T]*): js.Array[T] = js.native
-  def intersection[T](arrays: __.List[T]*): js.Array[T] = js.native
-  def difference[T](array: __.List[T], others: __.List[T]*): js.Array[T] = js.native
-  def uniq[T, TSort](array: __.List[T], isSorted: Boolean = ???, iterator: __.ListIterator[T, TSort] = ???, context: js.Any = ???): js.Array[T] = js.native
+  def first[T](array: /*__.*/List[T]): T = js.native
+  def first[T](array: /*__.*/List[T], n: Double): js.Array[T] = js.native
+  def head[T](array: /*__.*/List[T]): T = js.native
+  def head[T](array: /*__.*/List[T], n: Double): js.Array[T] = js.native
+  def take[T](array: /*__.*/List[T]): T = js.native
+  def take[T](array: /*__.*/List[T], n: Double): js.Array[T] = js.native
+  def initial[T](array: /*__.*/List[T], n: Double = ???): js.Array[T] = js.native
+  def last[T](array: /*__.*/List[T]): T = js.native
+  def last[T](array: /*__.*/List[T], n: Double): js.Array[T] = js.native
+  def rest[T](array: /*__.*/List[T], n: Double = ???): js.Array[T] = js.native
+  def tail[T](array: /*__.*/List[T], n: Double = ???): js.Array[T] = js.native
+  def drop[T](array: /*__.*/List[T], n: Double = ???): js.Array[T] = js.native
+  def compact[T](array: /*__.*/List[T]): js.Array[T] = js.native
+  def flatten(array: /*__.*/List[js.Any], shallow: Boolean = ???): js.Array[js.Any] = js.native
+  def without[T](array: /*__.*/List[T], values: T*): js.Array[T] = js.native
+  def union[T](arrays: /*__.*/List[T]*): js.Array[T] = js.native
+  def intersection[T](arrays: /*__.*/List[T]*): js.Array[T] = js.native
+  def difference[T](array: /*__.*/List[T], others: /*__.*/List[T]*): js.Array[T] = js.native
+  def uniq[T, TSort](array: /*__.*/List[T], isSorted: Boolean = false, iterator: __.ListIterator[T, TSort] = null, context: js.Any = null): js.Array[T] = js.native
   @JSName("uniq")
-  def uniqNoBoolean[T, TSort](array: __.List[T], iterator: __.ListIterator[T, TSort] = ???, context: js.Any = ???): js.Array[T] = js.native
+  def uniqNoBoolean[T, TSort](array: /*__.*/List[T], iterator: __.ListIterator[T, TSort] = ???, context: js.Any = ???): js.Array[T] = js.native
   @JSName("unique")
-  def uniqueNoBoolean[T, TSort](array: __.List[T], iterator: __.ListIterator[T, TSort] = ???, context: js.Any = ???): js.Array[T] = js.native
-  def unique[T, TSort](array: __.List[T], isSorted: Boolean = ???, iterator: __.ListIterator[T, TSort] = ???, context: js.Any = ???): js.Array[T] = js.native
+  def uniqueNoBoolean[T, TSort](array: /*__.*/List[T], iterator: __.ListIterator[T, TSort] = ???, context: js.Any = ???): js.Array[T] = js.native
+  def unique[T, TSort](array: /*__.*/List[T], isSorted: Boolean = false, iterator: __.ListIterator[T, TSort] = ???, context: js.Any = ???): js.Array[T] = js.native
   def zip(arrays: js.Array[js.Any]*): js.Array[js.Array[js.Any]] = js.native
   @JSName("zip")
   def zipAnys(arrays: js.Any*): js.Array[js.Any] = js.native
-  def `object`[TResult <: AnyRef](keys: __.List[String], values: __.List[js.Any]): TResult = js.native
+  def `object`[TResult <: AnyRef](keys: /*__.*/List[String], values: /*__.*/List[js.Any]): TResult = js.native
   def `object`[TResult <: AnyRef](keyValuePairs: js.Array[js.Any]*): TResult = js.native
-  def `object`[TResult <: AnyRef](list: __.List[js.Any], values: js.Any = ???): TResult = js.native
-  def indexOf[T](array: __.List[T], value: T, isSorted: Boolean = ???): Double = js.native
-  def indexOf[T](array: __.List[T], value: T, startFrom: Double): Double = js.native
-  def lastIndexOf[T](array: __.List[T], value: T, from: Double = ???): Double = js.native
-  def sortedIndex[T, TSort](list: __.List[T], value: T, iterator: js.Function1[T, TSort] = ???, context: js.Any = ???): Double = js.native
+  def `object`[TResult <: AnyRef](list: /*__.*/List[js.Any], values: js.Any = ???): TResult = js.native
+  def indexOf[T](array: /*__.*/List[T], value: T, isSorted: Boolean = ???): Double = js.native
+  def indexOf[T](array: /*__.*/List[T], value: T, startFrom: Double): Double = js.native
+  def lastIndexOf[T](array: /*__.*/List[T], value: T, from: Double = ???): Double = js.native
+  def sortedIndex[T, TSort](list: /*__.*/List[T], value: T, iterator: js.Function1[T, TSort] = ???, context: js.Any = ???): Double = js.native
   def range(start: Double, stop: Double, step: Double = ???): js.Array[Double] = js.native
   def range(stop: Double): js.Array[Double] = js.native
   def bind(func: js.Function, context: js.Any, arguments: js.Any*): js.Function0[Any] = js.native
@@ -175,11 +183,11 @@ trait UnderscoreStatic extends js.Object {
   def compose(functions: js.Function*): js.Function = js.native
   def keys(`object`: js.Any): js.Array[String] = js.native
   def values(`object`: js.Any): js.Array[js.Any] = js.native
-  def mapObject[T, U](`object`: __.Dictionary[T], iteratee: js.Function3[T, String, __.Dictionary[T], U], context: js.Any = ???): __.Dictionary[U] = js.native
+  def mapObject[T, U](`object`: /*__.*/Dictionary[T], iteratee: js.Function3[T, String, /*__.*/Dictionary[T], U], context: js.Any = ???): /*__.*/Dictionary[U] = js.native
   @JSName("mapObject")
-  def mapObjectGeneric[T](`object`: js.Any, iteratee: js.Function3[js.Any, String, js.Any, T], context: js.Any = ???): __.Dictionary[T] = js.native
+  def mapObjectGeneric[T](`object`: js.Any, iteratee: js.Function3[js.Any, String, js.Any, T], context: js.Any = ???): /*__.*/Dictionary[T] = js.native
   @JSName("mapObject")
-  def mapObjectString(`object`: js.Any, iteratee: String, context: js.Any = ???): __.Dictionary[js.Any] = js.native
+  def mapObjectString(`object`: js.Any, iteratee: String, context: js.Any = ???): /*__.*/Dictionary[js.Any] = js.native
   def pairs(`object`: js.Any): js.Array[js.Array[js.Any]] = js.native
   def invert(`object`: js.Any): js.Dynamic = js.native
   def functions(`object`: js.Any): js.Array[String] = js.native
@@ -265,11 +273,11 @@ trait Underscore[T] extends js.Object {
   def min(): Double = js.native
   def min(iterator: __.ListIterator[T, Double], context: js.Any = ???): T = js.native
   def sortBy(iterator: __.ListIterator[T, js.Any] = ???, context: js.Any = ???): js.Array[T] = js.native
-  def groupBy(iterator: __.ListIterator[T, js.Any] = ???, context: js.Any = ???): __.Dictionary[__.List[T]] = js.native
+  def groupBy(iterator: __.ListIterator[T, js.Any] = ???, context: js.Any = ???): /*__.*/Dictionary[/*__.*/List[T]] = js.native
   @JSName("groupBy")
-  def groupByString(iterator: String, context: js.Any = ???): __.Dictionary[js.Array[T]] = js.native
-  def indexBy(iterator: __.ListIterator[T, js.Any], context: js.Any = ???): __.Dictionary[T] = js.native
-  def countBy(iterator: __.ListIterator[T, js.Any] = ???, context: js.Any = ???): __.Dictionary[Double] = js.native
+  def groupByString(iterator: String, context: js.Any = ???): /*__.*/Dictionary[js.Array[T]] = js.native
+  def indexBy(iterator: __.ListIterator[T, js.Any], context: js.Any = ???): /*__.*/Dictionary[T] = js.native
+  def countBy(iterator: __.ListIterator[T, js.Any] = ???, context: js.Any = ???): /*__.*/Dictionary[Double] = js.native
   def shuffle(): js.Array[T] = js.native
   def sample[R](n: Double): js.Array[R] = js.native
   def sample[R](): R = js.native
@@ -291,9 +299,9 @@ trait Underscore[T] extends js.Object {
   def flatten(shallow: Boolean = ???): js.Array[js.Any] = js.native
   def without(values: T*): js.Array[T] = js.native
   def partition(iterator: __.ListIterator[T, Boolean], context: js.Any = ???): js.Array[js.Array[T]] = js.native
-  def union(arrays: __.List[T]*): js.Array[T] = js.native
-  def intersection(arrays: __.List[T]*): js.Array[T] = js.native
-  def difference(others: __.List[T]*): js.Array[T] = js.native
+  def union(arrays: /*__.*/List[T]*): js.Array[T] = js.native
+  def intersection(arrays: /*__.*/List[T]*): js.Array[T] = js.native
+  def difference(others: /*__.*/List[T]*): js.Array[T] = js.native
   def uniq(isSorted: Boolean = ???, iterator: __.ListIterator[T, js.Any] = ???): js.Array[T] = js.native
   @JSName("uniq")
   def uniqNonBoolean[TSort](iterator: __.ListIterator[T, TSort] = ???, context: js.Any = ???): js.Array[T] = js.native
@@ -431,9 +439,9 @@ trait _Chain[T] extends js.Object {
   def flatten(shallow: Boolean = ???): _Chain[js.Any] = js.native
   def without(values: T*): _Chain[T] = js.native
   def partition(iterator: __.ListIterator[T, Boolean], context: js.Any = ???): _Chain[js.Array[js.Array[T]]] = js.native
-  def union(arrays: __.List[T]*): _Chain[T] = js.native
-  def intersection(arrays: __.List[T]*): _Chain[T] = js.native
-  def difference(others: __.List[T]*): _Chain[T] = js.native
+  def union(arrays: /*__.*/List[T]*): _Chain[T] = js.native
+  def intersection(arrays: /*__.*/List[T]*): _Chain[T] = js.native
+  def difference(others: /*__.*/List[T]*): _Chain[T] = js.native
   def uniq(isSorted: Boolean = ???, iterator: __.ListIterator[T, js.Any] = ???): _Chain[T] = js.native
   @JSName("uniq")
   def uniqNoBoolean[TSort](iterator: __.ListIterator[T, TSort] = ???, context: js.Any = ???): _Chain[T] = js.native
@@ -534,9 +542,11 @@ trait _ChainSingle[T] extends js.Object {
 trait _ChainOfArrays[T] extends _Chain[js.Array[T]] {
   def flatten(): _Chain[T] = js.native
 }
-
 }
 
-package object importedjs extends js.GlobalScope {
-  var `___`: UnderscoreStatic = js.native
+package com.mind_era {
+package object underscore extends js.GlobalScope {
+  @JSName("us")
+  final val `___` : UnderscoreStatic = js.native
+}
 }

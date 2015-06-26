@@ -1,22 +1,25 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+*.class
+*.log
 
-# Folder config file
-Desktop.ini
+# sbt specific
+.cache/
+.history/
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.cache-main
+.cache-tests
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+.classpath
+.project
+.settings
 # =========================
 # Operating System Files
 # =========================
@@ -42,8 +45,26 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-#Scala/sbt output related files
-*.class
-*.cache
-project/target/
-target/
+# Windows
+# =========================
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+/bin/
+

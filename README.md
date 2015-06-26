@@ -1,7 +1,7 @@
 underscore.scala.js
 ==============
 
-[underscore](http://underscorejs.org/) s a JavaScript library that provides a whole mess of useful functional programming helpers without extending any built-in objects. Underscore.scala.js is the binding of Underscore.js for [Scala.js](http://www.scala-js.org/).
+[underscore](http://underscorejs.org/) is a JavaScript library that provides a whole mess of useful functional programming helpers without extending any built-in objects. Underscore.scala.js is the binding of Underscore.js for [Scala.js](http://www.scala-js.org/).
 
 Documentation
 -------------

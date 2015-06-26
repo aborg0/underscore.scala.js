@@ -546,7 +546,7 @@ trait _ChainOfArrays[T] extends _Chain[js.Array[T]] {
 
 package com.mind_era {
 package object underscore extends js.GlobalScope {
-  @JSName("us")
-  final val `___` : UnderscoreStatic = js.native
+  @JSName("_")
+  var `___` : UnderscoreStatic = js.native
 }
 }

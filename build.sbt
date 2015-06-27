@@ -21,7 +21,7 @@ testFrameworks += new TestFramework("utest.runner.Framework")
 
 jsDependencies += "org.webjars" % "underscorejs" % "1.7.0-1" / "underscore.js"
 
-libraryDependencies += "com.lihaoyi" %%% "utest" % "0.3.1"
+libraryDependencies += "com.lihaoyi" %%% "utest" % "0.3.1" % "test"
 
 testFrameworks += new TestFramework("utest.runner.Framework")
 

@@ -1,0 +1,166 @@
+[0m[[31merror[0m] [0mReferring to non-existent class Lorg_scalactic_exceptions_NullArgumentException[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalactic_Requirements$RequirementsHelper.macroRequireNonNull__AT__AO__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_exceptions_TestRegistrationClosedException.init___T__F1[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_SuperEngine.registerFlatBranch__T__F0__T__T__I__I__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_FlatSpecLike$$anonfun$3.apply__T__Lorg_scalatest_words_BehaveWord[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_FlatSpecLike$$anonfun$3.apply__O__O[0m
+[0m[[31merror[0m] [0m  called from sc_LinearSeqOptimized$class.foreach__sc_LinearSeqOptimized__F1__V[0m
+[0m[[31merror[0m] [0m  called from scm_MutableList.foreach__F1__V[0m
+[0m[[31merror[0m] [0m  called from sc_TraversableOnce$class.reduceLeft__sc_TraversableOnce__F2__O[0m
+[0m[[31merror[0m] [0m  called from sjs_js_WrappedDictionary$DictionaryIterator.reduceLeft__F2__O[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalacheck_Prop$$anonfun$all$1.apply__Lorg_scalacheck_Gen$Parameters__Lorg_scalacheck_Prop$Result[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalacheck_Prop$$anonfun$all$1.apply__O__O[0m
+[0m[[31merror[0m] [0m  called from sc_LinearSeqOptimized$class.foreach__sc_LinearSeqOptimized__F1__V[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0minvolving instantiated classes:[0m
+[0m[[31merror[0m] [0m  Lorg_scalactic_Requirements$RequirementsHelper[0m
+[0m[[31merror[0m] [0m  Lorg_scalatest_Engine[0m
+[0m[[31merror[0m] [0m  Lorg_scalatest_FlatSpecLike$$anonfun$3[0m
+[0m[[31merror[0m] [0m  scm_Queue[0m
+[0m[[31merror[0m] [0m  scm_MutableList[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0m  sjs_js_WrappedDictionary$DictionaryIterator[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0m  Lorg_scalacheck_Prop$$anonfun$all$1[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0mReferring to non-existent method Lorg_scalactic_exceptions_NullArgumentException.init___T[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalactic_Requirements$RequirementsHelper.macroRequireNonNull__AT__AO__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_exceptions_TestRegistrationClosedException.init___T__F1[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_SuperEngine.registerFlatBranch__T__F0__T__T__I__I__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_FlatSpecLike$$anonfun$3.apply__T__Lorg_scalatest_words_BehaveWord[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_FlatSpecLike$$anonfun$3.apply__O__O[0m
+[0m[[31merror[0m] [0m  called from sc_LinearSeqOptimized$class.foreach__sc_LinearSeqOptimized__F1__V[0m
+[0m[[31merror[0m] [0m  called from scm_MutableList.foreach__F1__V[0m
+[0m[[31merror[0m] [0m  called from sc_TraversableOnce$class.reduceLeft__sc_TraversableOnce__F2__O[0m
+[0m[[31merror[0m] [0m  called from sjs_js_WrappedDictionary$DictionaryIterator.reduceLeft__F2__O[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalacheck_Prop$$anonfun$all$1.apply__Lorg_scalacheck_Gen$Parameters__Lorg_scalacheck_Prop$Result[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalacheck_Prop$$anonfun$all$1.apply__O__O[0m
+[0m[[31merror[0m] [0m  called from sc_LinearSeqOptimized$class.foreach__sc_LinearSeqOptimized__F1__V[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0minvolving instantiated classes:[0m
+[0m[[31merror[0m] [0m  Lorg_scalactic_Requirements$RequirementsHelper[0m
+[0m[[31merror[0m] [0m  Lorg_scalatest_Engine[0m
+[0m[[31merror[0m] [0m  Lorg_scalatest_FlatSpecLike$$anonfun$3[0m
+[0m[[31merror[0m] [0m  scm_Queue[0m
+[0m[[31merror[0m] [0m  scm_MutableList[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0m  sjs_js_WrappedDictionary$DictionaryIterator[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0m  Lorg_scalacheck_Prop$$anonfun$all$1[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0mReferring to non-existent method Lorg_scalactic_exceptions_NullArgumentException.init___T[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_tools_ArgsParser$.parseCompoundArgIntoList__sci_List__T__sci_List[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_tools_ArgsParser$.parseCompoundArgIntoSet__sci_List__T__sci_Set[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_tools_SlaveRunner.init___AT__AT__jl_ClassLoader__F1[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_tools_Framework.slaveRunner__AT__AT__jl_ClassLoader__F1__Lsbt_testing_Runner[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_Slave.$$anonfun$2__p2__Lorg_scalajs_testinterface_ScalaJSClassLoader__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_Slave.newRunner__p2__s_util_Try[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_Slave.$$anonfun$1__p2__T__F0__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_Slave.handleMsgImpl__T__F0__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_BridgeBase.handleMsg__p1__T__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_BridgeBase.$$anonfun$1__p1__T__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_BridgeBase.init__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_BridgeBase.$$js$exported$meth$init__O[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_BridgeBase.init[0m
+[0m[[31merror[0m] [0m  exported to JavaScript with @JSExport[0m
+[0m[[31merror[0m] [0minvolving instantiated classes:[0m
+[0m[[31merror[0m] [0m  Lorg_scalatest_tools_ArgsParser$[0m
+[0m[[31merror[0m] [0m  Lorg_scalatest_tools_Framework[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0m  Lorg_scalajs_testinterface_internal_Slave[0m
+[0m[[31merror[0m] [0m  Lorg_scalajs_testinterface_internal_Master[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0mReferring to non-existent method Lorg_scalactic_exceptions_NullArgumentException.init___T[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_tools_ArgsParser$.parseSuiteArgsIntoNameStrings__sci_List__T__sci_List[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_tools_SlaveRunner.init___AT__AT__jl_ClassLoader__F1[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_tools_Framework.slaveRunner__AT__AT__jl_ClassLoader__F1__Lsbt_testing_Runner[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_Slave.$$anonfun$2__p2__Lorg_scalajs_testinterface_ScalaJSClassLoader__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_Slave.newRunner__p2__s_util_Try[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_Slave.$$anonfun$1__p2__T__F0__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_Slave.handleMsgImpl__T__F0__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_BridgeBase.handleMsg__p1__T__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_BridgeBase.$$anonfun$1__p1__T__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_BridgeBase.init__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_BridgeBase.$$js$exported$meth$init__O[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalajs_testinterface_internal_BridgeBase.init[0m
+[0m[[31merror[0m] [0m  exported to JavaScript with @JSExport[0m
+[0m[[31merror[0m] [0minvolving instantiated classes:[0m
+[0m[[31merror[0m] [0m  Lorg_scalatest_tools_ArgsParser$[0m
+[0m[[31merror[0m] [0m  Lorg_scalatest_tools_Framework[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0m  Lorg_scalajs_testinterface_internal_Slave[0m
+[0m[[31merror[0m] [0m  Lorg_scalajs_testinterface_internal_Master[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0mReferring to non-existent method Lorg_scalactic_exceptions_NullArgumentException.init___T[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_exceptions_StackDepthException.init___s_Option__s_Option__F1[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_exceptions_TestRegistrationClosedException.init___T__F1[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_SuperEngine.registerFlatBranch__T__F0__T__T__I__I__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_FlatSpecLike$$anonfun$3.apply__T__Lorg_scalatest_words_BehaveWord[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_FlatSpecLike$$anonfun$3.apply__O__O[0m
+[0m[[31merror[0m] [0m  called from sc_LinearSeqOptimized$class.foreach__sc_LinearSeqOptimized__F1__V[0m
+[0m[[31merror[0m] [0m  called from scm_MutableList.foreach__F1__V[0m
+[0m[[31merror[0m] [0m  called from sc_TraversableOnce$class.reduceLeft__sc_TraversableOnce__F2__O[0m
+[0m[[31merror[0m] [0m  called from sjs_js_WrappedDictionary$DictionaryIterator.reduceLeft__F2__O[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalacheck_Prop$$anonfun$all$1.apply__Lorg_scalacheck_Gen$Parameters__Lorg_scalacheck_Prop$Result[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalacheck_Prop$$anonfun$all$1.apply__O__O[0m
+[0m[[31merror[0m] [0m  called from sc_LinearSeqOptimized$class.foreach__sc_LinearSeqOptimized__F1__V[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0minvolving instantiated classes:[0m
+[0m[[31merror[0m] [0m  Lorg_scalatest_Engine[0m
+[0m[[31merror[0m] [0m  Lorg_scalatest_FlatSpecLike$$anonfun$3[0m
+[0m[[31merror[0m] [0m  scm_Queue[0m
+[0m[[31merror[0m] [0m  scm_MutableList[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0m  sjs_js_WrappedDictionary$DictionaryIterator[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0m  Lorg_scalacheck_Prop$$anonfun$all$1[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0mReferring to non-existent method Lorg_scalactic_exceptions_NullArgumentException.init___T[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_exceptions_StackDepthException.init___F1__s_Option__F1[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_exceptions_StackDepthException.init___s_Option__s_Option__F1[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_exceptions_TestRegistrationClosedException.init___T__F1[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_SuperEngine.registerFlatBranch__T__F0__T__T__I__I__V[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_FlatSpecLike$$anonfun$3.apply__T__Lorg_scalatest_words_BehaveWord[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalatest_FlatSpecLike$$anonfun$3.apply__O__O[0m
+[0m[[31merror[0m] [0m  called from sc_LinearSeqOptimized$class.foreach__sc_LinearSeqOptimized__F1__V[0m
+[0m[[31merror[0m] [0m  called from scm_MutableList.foreach__F1__V[0m
+[0m[[31merror[0m] [0m  called from sc_TraversableOnce$class.reduceLeft__sc_TraversableOnce__F2__O[0m
+[0m[[31merror[0m] [0m  called from sjs_js_WrappedDictionary$DictionaryIterator.reduceLeft__F2__O[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalacheck_Prop$$anonfun$all$1.apply__Lorg_scalacheck_Gen$Parameters__Lorg_scalacheck_Prop$Result[0m
+[0m[[31merror[0m] [0m  called from Lorg_scalacheck_Prop$$anonfun$all$1.apply__O__O[0m
+[0m[[31merror[0m] [0m  called from sc_LinearSeqOptimized$class.foreach__sc_LinearSeqOptimized__F1__V[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0minvolving instantiated classes:[0m
+[0m[[31merror[0m] [0m  Lorg_scalatest_Engine[0m
+[0m[[31merror[0m] [0m  Lorg_scalatest_FlatSpecLike$$anonfun$3[0m
+[0m[[31merror[0m] [0m  scm_Queue[0m
+[0m[[31merror[0m] [0m  scm_MutableList[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0m  sjs_js_WrappedDictionary$DictionaryIterator[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+[0m[[31merror[0m] [0m  Lorg_scalacheck_Prop$$anonfun$all$1[0m
+[0m[[31merror[0m] [0m    (already seen, not repeating call stack)[0m
+java.lang.RuntimeException: There were linking errors
+	at scala.sys.package$.error(package.scala:27)
+	at org.scalajs.core.tools.optimizer.Linker.link(Linker.scala:108)
+	at org.scalajs.core.tools.optimizer.Linker.link(Linker.scala:74)
+	at org.scalajs.sbtplugin.ScalaJSPluginInternal$$anonfun$18.apply(ScalaJSPluginInternal.scala:243)
+	at org.scalajs.sbtplugin.ScalaJSPluginInternal$$anonfun$18.apply(ScalaJSPluginInternal.scala:234)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
+	at sbt.std.Transform$$anon$4.work(System.scala:63)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
+	at sbt.Execute.work(Execute.scala:235)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[0m[[31merror[0m] [0m(test:[31mscalaJSLinkingUnitClasspath[0m) There were linking errors[0m

@@ -38,9 +38,6 @@ trait TemplateSettings extends js.Object {
 //  def update(index: String, v: T): Unit = js.native
 //}
 
-import scalajs.js.Dictionary
-import collection.mutable.{IndexedSeq => List}
-import collection.{Iterable => Collection}
 
 trait ListIterator[T, TResult] extends js.Object {
   def apply(value: T, index: Double, list: List[T]): TResult = js.native
@@ -60,8 +57,8 @@ trait MemoObjectIterator[T, TResult] extends js.Object {
 
 }
 
-import collection.mutable.{IndexedSeq => List}
-import collection.{Iterable => Collection}
+//import collection.mutable.{IndexedSeq => List}
+//import collection.{Iterable => Collection}
 
 trait UnderscoreStatic extends js.Object {
   def apply[T](value: js.Array[T]): Underscore[T] = js.native
@@ -548,5 +545,8 @@ package com.mind_era {
 package object underscore extends js.GlobalScope {
   @JSName("_")
   var `___` : UnderscoreStatic = js.native
+  type Dictionary[T] = scalajs.js.Dictionary[T]
+  type List[T] = collection.mutable.IndexedSeq[T]
+  type Collection[T] = collection.Iterable[T]
 }
 }

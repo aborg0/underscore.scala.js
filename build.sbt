@@ -11,17 +11,17 @@ name := "underscore-scala-js"
 
 version := "0.0.10700"
 
-scalaVersion := "2.11.6"
+scalaVersion := "2.11.7"
 
 persistLauncher in Compile := true
 
 persistLauncher in Test := false
 
-testFrameworks += new TestFramework("utest.runner.Framework")
+//testFrameworks += new TestFramework("utest.runner.Framework")
 
 jsDependencies += "org.webjars" % "underscorejs" % "1.7.0-1" / "underscore.js"
 
-libraryDependencies += "com.lihaoyi" %%% "utest" % "0.3.1" % "test"
+libraryDependencies += "org.scalatest" %%% "scalatest" % "3.0.0-M4" % "test"
 
 testFrameworks += new TestFramework("utest.runner.Framework")
 

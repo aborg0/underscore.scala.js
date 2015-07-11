@@ -21,9 +21,7 @@ persistLauncher in Test := false
 
 jsDependencies += "org.webjars" % "underscorejs" % "1.7.0-1" / "underscore.js"
 
-libraryDependencies += "org.scalatest" %%% "scalatest" % "3.0.0-M5" % "test"
-
-testFrameworks += new TestFramework("utest.runner.Framework")
+libraryDependencies += "org.scalatest" %%% "scalatest" % "3.0.0-M6" % "test"
 
 skip in packageJSDependencies := false
 
